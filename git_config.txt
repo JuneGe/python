@@ -1,7 +1,19 @@
-设置git全局设置：
+#global_config
 git config --global user.name "your_name" 
 git config --global user.email  "your_email"
  
-需要取消git的全局设置:
+#project_config
 git config --global --unset user.name  
 git config --global --unset user.email
+
+#卭r create a new repository on the command line
+echo "# test1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:JuneGe/test1.git
+git push -u origin master
+
+#卭r push an existing repository from the command line
+git remote add origin git@github.com:JuneGe/test1.git
+git push -u origin master
